@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online shopping</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(154, 158, 158);
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        margin: 10px 0;
+      }
+      .online-shopping-container {
+        max-width: 800px;
+        background-color: white;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgb(187, 184, 184);
+      }
+      .product-row {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        align-items: center;
+        margin: 10px 0;
+      }
+      button {
+        background-color: rgb(86, 86, 221);
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: blue;
+      }
+      #feedback {
+        /* text-align: right; */
+        position: fixed;
+        top: 20;
+        right: 15px;
+        background-color: white;
+        padding: 10px;
+        display: none;
+        color: white;
+      }
+      #totalPrice {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="online-shopping-container">
+      <h1>Online Shopping</h1>
+      <p id="feedback"></p>
+      <h2>Available Products</h2>
+      <div id="ProductsContainer">
+        <!-- <div class="product-row">
+          <p>Laptop Rs.50000</p>
+          <button>Add to cart</button>
+        </div> -->
+      </div>
+      <h2>My Cart</h2>
+      <div id="cartContainer">
+        <!-- <div class="product-row">
+          <p>Laptop Rs.50000</p>
+          <button>Remove</button>
+        </div> -->
+      </div>
+      <!-- <button onclick="testingfn(10)">testing</button> -->
+      <h2 id="totalPrice">Rs.0</h2>
+      <h2>Actions</h2>
+      <button id="sortByPrice">Sort by Price</button>
+      <button id="clearCart">Clear cart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
